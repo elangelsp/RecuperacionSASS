@@ -64,3 +64,9 @@ h2 {
 h3 {
    font-size: 3.2rem;
 }
+
+ul{
+ list-style: none; //quitar los puntos de las listas
+ padding:0; //quitar la franja verde a la izquierda
+ margin: 0; //quitar el espacio arriba y abajo
+}
