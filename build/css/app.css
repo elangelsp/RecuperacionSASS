@@ -1,8 +1,23 @@
-.header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+header {
+  padding: 5rem 0;
+  position: relative;
+}
+header::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+header .contenido-header {
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url(../img/header_inicio.jpg);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
