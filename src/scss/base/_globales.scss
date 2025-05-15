@@ -8,15 +8,15 @@ html {
  box-sizing: inherit;
 }
 body {
-   font-family: v.$fuente_principal; //la importo de variables.scss
-   font-size: 1.6rem;
-   background-color: v.$cafeClaro;
+    font-family: v.$fuente_principal; //la importo de variables.scss
+    font-size: 1.6rem;
+    background-color: v.$cafeClaro;
 }
 p {
-   color: v.$negro;
-   font-size: 1.6rem;
-   line-height: 2; //Interlineado de 2 líneas para que las separe un poco más.
-}
+    color: v.$negro;
+    font-size: 1.6rem;
+    line-height: 2; //Interlineado de 2 líneas para que las separe un poco más.
+ }
 .contenedor {
  width: 95%;
  max-width: 120rem;
@@ -29,56 +29,13 @@ img {
  max-width: 100%;
  display: block; // para que tome todo el espacio disponible y no quede espacio en blanco debajo de la imagen.
 }
-h1, h2, h3 {
-   margin: 0 0 v.$separacion 0; // separación entre los títulos
-   font-family: v.$fuente_principal;
-   text-transform: uppercase;
-   text-align: center;
-   line-height: 1.5;
-}
-
-h1 {
-   font-size: 4rem;
-}
-
-h2 {
-   font-size: 3.6rem;
-   color: v.$primario;
-   span {
-       color: v.$secundario;
-       font-size: 1.8rem;
-       display: block; // para que fuerce un salto de línea. Ya no se usa <br> 
-   }
-   // la imagen del grano de café va a continuación del h2.
-   &::after {
-       content: ''; // para que se pueda usar la propiedad background-image
-       display: block; // poder darle un ancho y alto
-       width: 10rem;
-       height: 10rem;
-       margin: 0 auto; // centrar la imagen
-       background-image: url('../img/cafe.svg'); //cuidado con la ruta relativa
-       background-size: 10rem; //Porque si no me corta la imagen
-   }
-}
-
-.heading-blanco {
-   @extend h2; //Para que herede las propiedades de h2
-   //Ahora reescribo lo que quiero cambiar
-   color: v.$blanco;
-   span {
-     color: v.$blanco;
-   }
-   &::after {
-     display: none; //Para que no aparezca la imagen del grano de café
-   }
- }
-
-h3 {
-   font-size: 3.2rem;
-}
-
 ul{
- list-style: none; //quitar los puntos de las listas
- padding:0; //quitar la franja verde a la izquierda
- margin: 0; //quitar el espacio arriba y abajo
+    list-style: none; //quitar los puntos de las listas
+    padding:0; //quitar la franja verde a la izquierda
+    margin: 0; //quitar el espacio arriba y abajo
+}
+img {
+    max-width: 100%;
+    height: auto; // para el que el altura se defina de acuerdo al ancho que tenga la imagen.
+    display: block; // para que tome todo el espacio disponible y no quede espacio en blanco debajo de la imagen.
 }
