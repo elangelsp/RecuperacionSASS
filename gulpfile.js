@@ -15,7 +15,7 @@ function css(done) {
    done();
 }
 function dev(){
- watch('src/scss/app.scss',css) // atento a cambios del archivo app.scss y si cambia vuelve a llamar a la función css
+ watch('src/scss/**/*.scss',css) // atento a cambios del archivo app.scss y si cambia vuelve a llamar a la función css
 }
 
 exports.default = series(css,dev);
